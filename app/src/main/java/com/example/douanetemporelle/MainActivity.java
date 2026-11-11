@@ -29,16 +29,16 @@ public class MainActivity extends AppCompatActivity {
         rgMotif = findViewById(R.id.rg_motif_th);
         btnInspecter = findViewById(R.id.btn_inspecter_th);
 
-        // 4- كي المستخدم يضغط على الزر يصير هذا الكود
+        // 4- كي utilisatur click على boutton يصير هذا code
         btnInspecter.setOnClickListener(v -> {
 
-            // 5- نقراو القيم اللي كتبها المستخدم
+            // 5- نقراو valeur اللي كتبها utilisateur
             String nom = etNom.getText().toString().trim();
             String naissanceTxt = etNaissance.getText().toString().trim();
             String destinationTxt = etDestination.getText().toString().trim();
             int idChoisi = rgMotif.getCheckedRadioButtonId(); // -1 يعني ما اختار حتى حاجة
 
-            // 6- نتأكدو إلي كل الخانات معمّرة
+            // 6- نتأكدو إلي كل case معمّرة
             if (nom.isEmpty() || naissanceTxt.isEmpty()
                     || destinationTxt.isEmpty() || idChoisi == -1) {
                 Toast.makeText(this, "عمّر كل الخانات من فضلك", Toast.LENGTH_SHORT).show();
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             int naissance = Integer.parseInt(naissanceTxt);
             int destination = Integer.parseInt(destinationTxt);
 
-            // 8- سنة الوجهة لازم تكون أكبر من سنة الولادة
+            // 8- سنة distination لازم تكون أكبر من سنة الولادة
             if (destination <= naissance) {
                 Toast.makeText(this, "سنة الوجهة لازم تكون أكبر من سنة الولادة", Toast.LENGTH_SHORT).show();
                 return;
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             // 10- Intent explicite: نقولو من MainActivity إلى VerificationActivity
             Intent intent = new Intent(MainActivity.this, VerificationActivity.class);
 
-            // 11- نبعثو المعلومات، والمفاتيح مبنية بالميثود static متاعنا
+            // 11- نبعثو information، cles مبنية بالميثود static متاعنا
             intent.putExtra(Cles.cle(Cles.MATRICULE, "NOM_VOYAGEUR"), nom);
             intent.putExtra(Cles.cle(Cles.MATRICULE, "ANNEE_NAISSANCE"), naissance);
             intent.putExtra(Cles.cle(Cles.MATRICULE, "ANNEE_DESTINATION"), destination);
