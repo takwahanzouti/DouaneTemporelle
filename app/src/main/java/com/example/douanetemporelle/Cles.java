@@ -1,7 +1,7 @@
 package com.example.douanetemporelle;
 
 public class Cles {
-
+    // 4- هذا الكلاس يجمع الثوابت والميثود static اللي تبني مفاتيح الـ Intent
     // 1- المطريكول (آخر 4 أرقام من بطاقة الطالب) - بدّلو بتاعك
     public static final String MATRICULE = "5661";
 
