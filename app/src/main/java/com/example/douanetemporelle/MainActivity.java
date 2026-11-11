@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
+// 13- هذي interface الأولى
     // 1- نصرّحو على العناصر متاع الواجهة
     EditText etNom, etNaissance, etDestination;
     RadioGroup rgMotif;
