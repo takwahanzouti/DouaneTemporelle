@@ -25,7 +25,7 @@ public class ResultActivity extends AppCompatActivity {
         boolean verdict = recu.getBooleanExtra(Cles.cle(Cles.MATRICULE, "VERDICT"), false);
         String nom = recu.getStringExtra(Cles.cle(Cles.MATRICULE, "NOM_VOYAGEUR"));
 
-        // 2- نبدّلو لون الخلفية والرسالة حسب النتيجة
+        // 2- نبدّلو لون backgroud والرسالة حسب النتيجة
         if (verdict) {
             racine.setBackgroundColor(Color.parseColor("#2E7D32")); // أخضر
             tvMessage.setText("Bon voyage " + nom + " !");
