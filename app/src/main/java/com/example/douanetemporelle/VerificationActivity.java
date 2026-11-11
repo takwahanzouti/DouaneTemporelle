@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+// 4- هذي interface الثالثة
 public class VerificationActivity extends AppCompatActivity {
 // 10- هذي الشاشة الثانية: الـ passeport اللي نراجعو فيه بيانات المسافر
     TextView tvNom, tvAge, tvTrajet, tvMotif;
