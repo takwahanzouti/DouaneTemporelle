@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class VerificationActivity extends AppCompatActivity {
-
+// 10- هذي الشاشة الثانية: الـ passeport اللي نراجعو فيه بيانات المسافر
     TextView tvNom, tvAge, tvTrajet, tvMotif;
     Button btnApprouver, btnRefuser;
     String nom;
